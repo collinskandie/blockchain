@@ -1,0 +1,5 @@
+web3==5.23.0
+web3==5.23.0  # Python library for Ethereum blockchain interaction
+Flask==2.1.1  # Web framework for building the application's backend
+Jinja2==3.0.3  # Template engine for rendering HTML templates
+requests==2.26.0  # Library for making HTTP requests to blockchain nodes or other APIs
