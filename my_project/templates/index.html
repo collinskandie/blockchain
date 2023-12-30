@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RBCA System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Create a New User</h1>
+        <form action="/create_user" method="post" class="mt-4">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username:</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+            </div>
+            <div class="mb-3">
+                <label for="role" class="form-label">Role:</label>
+                <select class="form-select" id="role" name="role">
+                    <option selected>Choose a role...</option>
+                    <option value="Administrator">Administrator</option>
+                    <option value="Factory Manager">Factory Manager</option>
+                    <option value="Production Manager">Production Manager</option>
+                    <option value="Line Supervisor">Line Supervisor</option>
+                    <option value="Machine Operator">Machine Operator</option>
+                    <option value="Executive">Executive</option>
+                    <option value="Quality Manager">Quality Manager</option>
+                    <option value="Quality Inspector">Quality Inspector</option>
+                    <option value="Facility Manager">Facility Manager</option>
+                    <option value="Maintenance Manager">Maintenance Manager</option>
+                    <option value="Service Technician">Service Technician</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Create User</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
