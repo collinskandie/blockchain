@@ -1,9 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 import json
 import os
+import logging
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Change to a random secret key for production
+
+# Configure logging
+logging.basicConfig(filename='./data/user_activity.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 @app.route('/')
 def index():
@@ -22,6 +26,7 @@ def create_user():
         'email': email,
         'role': role
     }
+    logging.info(f"User created: {username}, Email: {email}")
 
     # Save user data to JSON file
     file_path = './data/data.json'
@@ -52,9 +57,12 @@ def login():
                 for line in file:
                     user = json.loads(line)
                     if user['username'] == username:
+                        email = user['email']
                         # User found, return details and permissions
+                        logging.info(f"User Logged in: {username}, Email: {email}")
                         return jsonify(user)
-        
+                        
+        logging.info(f"User not found: {username}, Email: null")
         flash('User not found', 'error')
         return redirect(url_for('login'))
 

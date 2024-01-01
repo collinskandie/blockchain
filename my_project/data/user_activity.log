@@ -1,0 +1,13 @@
+2024-01-01 14:26:36,224 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-01-01 14:26:36,224 - INFO - [33mPress CTRL+C to quit[0m
+2024-01-01 14:26:36,232 - INFO -  * Restarting with stat
+2024-01-01 14:26:36,662 - WARNING -  * Debugger is active!
+2024-01-01 14:26:36,669 - INFO -  * Debugger PIN: 133-999-765
+2024-01-01 14:28:16,433 - INFO - 127.0.0.1 - - [01/Jan/2024 14:28:16] "GET / HTTP/1.1" 200 -
+2024-01-01 14:28:16,513 - INFO - 127.0.0.1 - - [01/Jan/2024 14:28:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-01-01 14:28:26,515 - INFO - User created: test user, Email: test@system.com
+2024-01-01 14:28:26,519 - INFO - 127.0.0.1 - - [01/Jan/2024 14:28:26] "[32mPOST /create_user HTTP/1.1[0m" 302 -
+2024-01-01 14:28:26,854 - INFO - 127.0.0.1 - - [01/Jan/2024 14:28:26] "GET /login HTTP/1.1" 200 -
+2024-01-01 14:29:29,443 - INFO - User Logged in: test user, Email: test@system.com
+2024-01-01 14:29:29,444 - INFO - 127.0.0.1 - - [01/Jan/2024 14:29:29] "POST /login HTTP/1.1" 200 -
