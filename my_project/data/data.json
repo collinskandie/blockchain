@@ -1,12 +1,17 @@
 [
     {
-        "username": "test user",
-        "email": "test@system.com",
+        "username": "p052001108z",
+        "email": "admin123@system.com",
         "role": "Administrator"
     },
     {
-        "username": "test user",
-        "email": "test@system.com",
-        "role": "Administrator"
+        "username": "admin",
+        "email": "collinskandie1@gmail.com",
+        "role": "Factory Manager"
+    },
+    {
+        "username": "test user 2",
+        "email": "testuser@system.com",
+        "role": "Quality Manager"
     }
 ]
